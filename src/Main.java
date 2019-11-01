@@ -125,7 +125,6 @@ public class Main {
 				
 			} else {
 				double choice = Math.random() * 2;
-				System.out.println(choice);
 				
 				if (choice < 1) {
 					System.out.println("I'm sorry, I didn't quite understand that");
