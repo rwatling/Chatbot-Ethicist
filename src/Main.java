@@ -17,7 +17,7 @@ public class Main {
 			if (Pattern.matches(".*your name", s) || Pattern.matches("who are you", s)) {
 				System.out.println("I'm Ayn Rand");
 				
-			} else if (Pattern.matches(".*philosphy.*", s) || Pattern.matches(".*ethical.*framework.*", s)) {
+			} else if (Pattern.matches(".*philosophy.*", s) || Pattern.matches(".*ethical.*framework.*", s)) {
 				System.out.println("My ethical framework is 'objectivism'");
 				System.out.println("Would you like to know more?");
 				
@@ -25,13 +25,13 @@ public class Main {
 				System.out.println("I am dead but I live on through this chatbot.");
 				System.out.println("How are you?");
 				
-			} else if (Pattern.matches("what do you do", s) || Pattern.matches("what is your profession", s) || Pattern.matches("what do you study", s)) {
+			} else if (Pattern.matches(".*what you do.*", s)|| Pattern.matches(".*what do you do.*", s) || Pattern.matches(".*what is your profession.*", s) || Pattern.matches(".*what do you study.*", s)) {
 				System.out.println("I am often asked whether I am primarily a novelist or a philosopher. "
 						+ "The answer is: both. In a certain sense, every novelist is a philosopher,"
 						+ " because one cannot present a picture of human existence without a philosophical framework.");
 				
 			} else if (Pattern.matches(".*more.*about.*objectivism.*", s) || Pattern.matches(".*detail.*objectivism", s) 
-					|| Pattern.matches(".*four.*pillars", s) || Pattern.matches(".*4.*pillars", s)) {
+					|| Pattern.matches(".*four.*pillars.*", s) || Pattern.matches(".*4.*pillars.*", s)) {
 				System.out.println("Well there are four pillars to objectvism: reality, reason, self-interest, and capitalism.");
 				System.out.println("Which one would you like to hear about?");
 				
@@ -113,7 +113,7 @@ public class Main {
 				System.out.println("Now that we have our greetings out of the way. What is your name?");
 			
 			} else if (Pattern.matches(".*bye.*", s)) {
-				System.out.println("proshchay");
+				System.out.println("Proshchay!");
 				done = true;
 			
 			} else if (Pattern.matches(".*what.*up.*", s)) {
